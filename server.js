@@ -4,6 +4,8 @@ let express = require('express'),
 
 // connect to db models
 let db = require('./Treno');
+let db = require('./Città');
+let db = require('./Orario');
 
 // make a new express app named "app".
 let app = express();
@@ -72,8 +74,11 @@ app.put('/api/treni/:id', (req, res) => {
       console.log('cound not find the treno.')
     }
     foundTreni.name = req.body.name || foundTreni.name;
-    foundTreni.type = req.body.type || foundTreni.type;
-    foundTreni.quantity = req.body.quantity || foundTreni.quantity;
+    foundTreni.from = req.body.from || foundTreni.from;
+    foundTreni.to = req.body.to || foundTreni.to;
+    foundTreni.OraArrivo = req.body.OraArrivo || foundTreni.OraArrivo;
+    foundTreni.OraPartenza = req.body.OraPartenza || foundTreni.OraPartenza;
+    
     console.log(`updating: ${foundTreni.name}`);
     //save it
     foundTreni.save((err, treno) => {

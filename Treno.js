@@ -5,8 +5,10 @@ let mongoose = require('mongoose'),
 let TrenoSchema = new Schema({
   // list model properties
   name: String, //codice treno
-  type: String,
-  quantity: Number
+  from: String,
+  to: String,
+  OraArrivo: Number,
+  OraPartenza: Number,
 });
 
 let Treno = mongoose.model('Treno', TrenoSchema);
