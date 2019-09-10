@@ -1,0 +1,25 @@
+{
+  "name": "layachi-178534-set2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Procfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/layachisara/layachi-178534-set2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/layachisara/layachi-178534-set2019/issues"
+  },
+  "homepage": "https://github.com/layachisara/layachi-178534-set2019#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "mongoose": "^5.7.0",
+    "parser": "^0.1.4"
+  }
+}
