@@ -19,7 +19,7 @@
   "homepage": "https://github.com/layachisara/layachi-178534-set2019#readme",
   "dependencies": {
     "body": "^5.1.0",
-    "mongoose": "^5.7.0",
+    "mongoose": "^5.7.5",
     "parser": "^0.1.4"
   }
 }
